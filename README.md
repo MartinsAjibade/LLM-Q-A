@@ -1,40 +1,45 @@
 # Phase 1 Mini Project: LLM Q&A CLI
 
-A simple terminal question-and-answer app powered by OpenAI.
+A simple command-line question-and-answer app powered by OpenAI.
 
-This project intentionally uses Phase 1 skills:
-- variables and data types
-- control flow (`if`, loops)
-- functions and modular design
-- lists/dictionaries for history
-- file handling (JSON save/load)
-- error handling with `try/except`
+Created by **Martins Ajibade**, this project was built as a Phase 1 Python mini project to practice core programming skills while creating a useful terminal app. The app lets users ask Python-related questions, view their question history, save history to a JSON file, and exit cleanly.
+---
 
-## 1) Setup
+## Features
 
-```bash
-cd Phase 1 LLM QA
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+- Ask Python-related questions from the terminal
+- Get AI-generated answers using OpenAI
+- Store Q&A history during the session
+- Save history to a local JSON file
+- Load previous history when the app starts
+- Clear in-memory history
+- Exit cleanly while saving progress
+- Handle errors using `try/except`
 
-## 2) Add your API key
+---
 
-```bash
-export OPENAI_API_KEY="your_key_here"
-```
+## Skills Practiced
 
-## 3) Run
+This project intentionally uses beginner-friendly Python concepts, including:
 
-```bash
-python main.py
-```
+- Variables and data types
+- Conditional logic with `if`, `elif`, and `else`
+- Loops for continuous user input
+- Functions for modular code
+- Lists and dictionaries for storing history
+- JSON file handling
+- Error handling with `try/except`
+- Environment variables for API key security
+- Basic command-line interface design
 
-## 4) Commands inside the app
+---
 
-- Ask any python related question directly.
-- `/history` prints your Q&A history.
-- `/save` saves history to `qa_history.json`.
-- `/clear` clears in-memory history.
-- `/exit` and `/quit` saves and quits.
+## Project Structure
+
+```text
+Phase 1 LLM QA/
+├── main.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── qa_history.json
