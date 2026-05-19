@@ -51,5 +51,4 @@ Phase 1 LLM QA/
 ├── main.py
 ├── requirements.txt
 ├── README.md
-├── .gitignore
-└── qa_history.json
+└── .gitignore
