@@ -1,1 +1,4 @@
 qa_history.json
+.env
+__pycache__/
+*.pyc
