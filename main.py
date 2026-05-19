@@ -142,6 +142,17 @@ def run_app(client: OpenAI, model: str) -> None:
             print("History cleared.")
             continue
 
+        if command == "/help":
+            print("""
+        Commands:
+        /help - Show this help message
+        /history - Show previous questions and answers
+        /clear - Clear the history
+        /save - Save the history
+        /exit or /quit - Exit the program
+        """)
+            continue
+
         try:
             answer = ask_openai_question(client, model, user_input)
 

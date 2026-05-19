@@ -34,6 +34,16 @@ This project intentionally uses beginner-friendly Python concepts, including:
 
 ---
 
+## Commands
+
+/help - Show commands
+/history - View saved Q&A
+/save - Save history
+/clear - Clear history
+/exit or /quit - Exit
+
+---
+
 ## Project Structure
 
 ```text
