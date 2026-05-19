@@ -67,12 +67,6 @@ def is_name_question(question: str) -> bool:
     return any(trigger in q for trigger in triggers)
 
 
-def is_code(question: str) -> bool:
-    """Check whether the input looks like code."""
-    keywords = ["def ", "print(", "=", "for ", "while ", "{", "}", "import "]
-    return any(keyword in question for keyword in keywords)
-
-
 def show_history(history: List[Dict[str, str]]) -> None:
     """Display the saved Q&A history."""
     if not history:
